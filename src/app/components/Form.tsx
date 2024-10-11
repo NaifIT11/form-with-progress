@@ -12,7 +12,8 @@ export default function Form() {
     setFeedbackValue(newFeedbackValue);
     setProgressValue(newFeedbackValue.length);
   };
-  const handleSubmit = () => {
+  const handleSubmit = (e: React.FormEvent<HTMLFontElement>) => {
+    e.preventDefault();
     console.log({feedback: feedbackValue})
   }
   return (
