@@ -17,9 +17,8 @@ export default function ProgressLimiter({ value }: ProgressLimiterProps) {
       aria-valuemin={0}
       aria-valuemax={100}
       aria-valuenow={clampedValue}
-      className="w-5 h-11"
     >
-      <svg width="100" height="100" viewBox="0 0 100 100" className="w-11 h-11">
+      <svg width="100" height="100" viewBox="0 0 100 100" className="w-10 h-10">
         <circle
           cx="50"
           cy="50"

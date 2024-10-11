@@ -32,8 +32,9 @@ export default function Form() {
             className="w-full disabled:cursor-not-allowed resize-none outline-none ring-black rounded-md border ring-0 focus-visible:ring-2 focus-visible:ring-ring p-3 text-sm"
           />
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 self-end">
             <ProgressLimiter value={progressValue} />
+            <button type="submit" className="px-4 py-2 rounded bg-black text-white font-bold">submit</button>
         </div>
       </form>
     </div>
