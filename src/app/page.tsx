@@ -1,8 +1,9 @@
-import ProgressLimiter from "./components/ProgressLimiter";
+import Form from "./components/Form";
+
 
 
 export default function Home() {
   return (
-    <ProgressLimiter value={100} />
+    <Form />
   )
 }
