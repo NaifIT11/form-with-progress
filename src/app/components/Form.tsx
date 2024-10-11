@@ -12,20 +12,21 @@ export default function Form() {
     setFeedbackValue(newFeedbackValue);
     setProgressValue(newFeedbackValue.length);
   };
-
+  const handleSubmit = () => {
+    console.log({feedback: feedbackValue})
+  }
   return (
     <div className="border p-4 rounded w-full">
       <div className="space-y-2">
         <h1 className="text-xl">Form</h1>
         <p className="text-sm">Send feedback 100 letters required or less</p>
       </div>
-      <form className="mt-2 flex flex-col gap-4 w-full">
+      <form onSubmit={handleSubmit} className="mt-2 flex flex-col gap-4 w-full">
         <div className="flex flex-col gap-2">
           <label htmlFor="feedback">Feedback:</label>
           <textarea
             value={feedbackValue}
             onChange={handleFeedbackChange}
-            maxLength={100}
             placeholder="Enter a value (0-100)"
             rows={4}
             cols={30}
