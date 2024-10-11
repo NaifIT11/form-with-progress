@@ -31,7 +31,7 @@ export default function Form() {
             rows={4}
             cols={30}
             id="feedback"
-            className="w-full border resize-none ring-0 outline-none ring-black rounded-md p-3 text-sm"
+            className="w-full border resize-none ring-0 outline-none ring-black ring-0 focus-visible:ring-2 focus-visible:ring-ring rounded-md p-3 text-sm"
           />
         </div>
         <div className="flex gap-2 self-end">
